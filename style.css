@@ -1,0 +1,150 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+html {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body {
+    background-color:moccasin;
+    padding: 10px
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex; 
+    justify-content: flex-end; 
+    margin: 0 0 10px 0;
+    padding: 0 0 0 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: tan;
+    width: 100%;
+}
+
+nav li {
+    padding: 0px;
+    list-style: none;
+}
+
+
+nav a {
+    display: flex;
+    padding: 10px;
+    width: 100% ;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1100px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        
+        justify-content: center;
+    }
+  
+}
+
+/* HERO */
+
+.hero-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: tan;
+    margin: 0 0 10px 0;
+}
+
+.hero-wrapper h1 {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.hero-wrapper img {
+    height: auto;
+    width: 80%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+}
+
+.hero-wrapper p {
+    padding: 0 0 10px 0;
+}
+
+/* LOGIN */
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: tan;
+    margin: 0 0 10px 0;
+}
+
+.login-wrapper h2, div {
+    margin: 10px 0 0 0;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+}
+
+.para p {
+    align-self: flex-end;
+    margin-right: 80px;
+    padding: 5px;
+}
+
+.para input {
+    border-radius: 5px;
+}
+
+/* BUTTON */
+
+.btn button {
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 0 0 10px 0;
+    color: black;
+    outline: none;
+}
+
+/* FOOTER */
+
+footer {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: tan;
+    text-align: center;
+}
